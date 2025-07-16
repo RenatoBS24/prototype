@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function redirect(){
-    window.location.href = "reserve-cita.html";
+    window.location.href = "/html/reserve-cita.html";
 }
 
 document.getElementById("btn-reservar-cita").addEventListener("click", redirect);
