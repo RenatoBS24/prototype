@@ -1,0 +1,142 @@
+/* filepath: c:\Users\DREP\Documents\UTP\CICLO VII\Diseño de productos y servicios\prototipo\css\download.css */
+.download-citas-section {
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(78,84,200,0.08);
+    padding: 2rem;
+    animation: fadeIn 0.8s;
+}
+
+.download-citas-section h1 {
+    color: #4e54c8;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.filtros-citas {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.filtros-citas select, .btn-filtrar {
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #d1d5fa;
+    font-size: 1rem;
+    background: #f4f6fb;
+    color: #333;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.btn-filtrar {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 1px 4px rgba(78,84,200,0.10);
+    transition: background 0.2s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+.btn-filtrar:hover {
+    background: linear-gradient(135deg, #8f94fb, #4e54c8);
+    transform: scale(1.05);
+}
+
+.exportar-citas {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.btn-exportar {
+    background: #4e54c8;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7rem 1.4rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(78,84,200,0.10);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background 0.2s, transform 0.2s;
+}
+.btn-exportar:hover {
+    background: #8f94fb;
+    color: #4e54c8;
+    transform: scale(1.05);
+}
+
+#lista-citas-descarga {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#lista-citas-descarga li {
+    background: #f4f6fb;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding: 1rem 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    box-shadow: 0 1px 4px rgba(78,84,200,0.07);
+    font-size: 1.05rem;
+    flex-wrap: wrap;
+}
+
+#lista-citas-descarga li i {
+    color: #4e54c8;
+    font-size: 1.3rem;
+}
+
+.cita-estado {
+    padding: 0.3em 0.8em;
+    border-radius: 12px;
+    font-size: 0.95em;
+    font-weight: 500;
+    background: #e0e4fa;
+    color: #4e54c8;
+    margin-left: 0.5em;
+}
+
+.cita-doctor {
+    color: #4e54c8;
+    font-size: 0.98em;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+}
+
+@media (max-width: 900px) {
+    .download-citas-section {
+        padding: 1rem;
+        max-width: 100vw;
+    }
+    #lista-citas-descarga li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    .filtros-citas, .exportar-citas {
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+}
