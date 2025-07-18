@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historial de Citas</title>
+    <title>Perfil de Usuario</title>
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/hisotry-cita.css">
+    <link rel="stylesheet" href="../css/perfil.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 <body>
@@ -31,13 +31,36 @@
             </nav>
         </aside>
         <main class="main-content">
-            <section class="historial-citas-section">
-                <h1><i class="bi bi-clock-history"></i> Historial de Citas</h1>
-                <ul id="lista-historial-completo"></ul>
+            <section class="perfil-section">
+                <h1><i class="bi bi-person"></i> Perfil de Usuario</h1>
+                <form id="form-perfil" class="form-perfil">
+                    <div class="perfil-img-container">
+                        <img id="perfil-img" src="https://ui-avatars.com/api/?name=Usuario&background=4e54c8&color=fff&size=128" alt="Foto de perfil">
+                        <input type="file" id="input-img" accept="image/*" style="display:none;">
+                        <button type="button" id="btn-cambiar-img" class="btn-cambiar-img"><i class="bi bi-camera"></i> Cambiar foto</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre"><i class="bi bi-person"></i> Nombre</label>
+                        <input type="text" id="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><i class="bi bi-envelope"></i> Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono"><i class="bi bi-telephone"></i> Teléfono</label>
+                        <input type="tel" id="telefono">
+                    </div>
+                    <div class="form-group">
+                        <label for="dni"><i class="bi bi-credit-card"></i> DNI</label>
+                        <input type="text" id="dni">
+                    </div>
+                    <button type="submit" class="btn-guardar-perfil"><i class="bi bi-save"></i> Guardar cambios</button>
+                </form>
             </section>
         </main>
     </div>
-    <script src="../js/reserve-history.js"></script>
+    <script src="../js/perfil.js"></script>
     <script>
         const menuToggle = document.getElementById('menu-toggle');
         const sidebar = document.getElementById('sidebar');
